@@ -5,4 +5,5 @@
     * [c指针](Cbasic/指针基础.md)
 * [c++基础知识](CPLUSbasic/README.md)
 * [技术积累](technology/README.md)
+    * [[]和*的区别](technology/[]和*的区别.md)
 
