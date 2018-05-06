@@ -15,6 +15,7 @@
     * [c语言求key,value](c指针小程序积累/c语言求key,value.md)
     * [字符串拷贝](c指针小程序积累/字符串拷贝.md)
     * [字符串的查找替换](c指针小程序积累/字符串的查找替换.md)
+    * [挖字符串放入二维数组](c指针小程序积累/挖字符串放入二维数组.md)
 * [c++基础知识](CPLUSbasic/README.md)
 * [技术积累](technology/README.md)
     * [[]和*的区别](technology/[]和*的区别.md)
