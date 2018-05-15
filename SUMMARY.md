@@ -30,5 +30,6 @@
 * [技术积累](technology/README.md)
     * [[]和*的区别](technology/[]和*的区别.md)
     * [数据类型的本质](technology/数据类型的本质.md)
+    * [const专题](technology/const专题.md)
 * [c++基础知识](CPLUSbasic/README.md)
 
