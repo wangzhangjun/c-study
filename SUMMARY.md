@@ -34,4 +34,10 @@
     * [数据类型的本质](technology/数据类型的本质.md)
     * [const专题](technology/const专题.md)
 * [c++基础知识](CPLUSbasic/README.md)
+    * [c++中的命名空间](CPLUSbasic/c++中的命名空间.md)
+    * [c++中对全局变量检测的增强](CPLUSbasic/c++中对全局变量检测的增强.md)
+    * [c++中对结构体的增强](CPLUSbasic/c++中对结构体的增强.md)
+    * [c++中对bool类型的加强](CPLUSbasic/c++中对bool类型的加强.md)
+    * [c++中对三目运算符的增强](CPLUSbasic/c++中对三目运算符的增强.md)
+    * [c++中对const的加强](CPLUSbasic/c++中对const的加强.md)
 
