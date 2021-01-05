@@ -151,7 +151,6 @@ int (*event[])(void) = {
     event_unexpected,
     event_end};
 
-// Nice, thanks for this. The only thing possible flaw here is that the lookup_transitions will likely be linear (O(n)) with this transition table datastructure. Its possible to make it better with multidimentional array - guaranteed O(1). Eg. the table can be represented as a multidimentional array where key is state and the value is an array where the key is the return code and value is the next state: int state_transitions[][3] = { [entry] = { foo, end, foo }, ... } /* ok, fail, repeat */
 int lookup_transitions[][7] = {
     // return codes:
     //      up       down       halt          top         bottom         fail          quit
