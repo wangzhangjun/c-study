@@ -57,6 +57,14 @@ void test3()
     printf("&a+1:%p\n", &a+1);  //比前面多了12，一个数组的大小
 }
 
+//指针加减指针
+void test4()
+{
+    int a[] = {1, 2, 3};
+    int *p = &a[2];
+    printf("%d\n", p-a);//a
+}
+
 int main()
 {
     int a[] = {1,2,3};
@@ -65,5 +73,5 @@ int main()
     int *p = b;  //但是这样是可以的，因为指针是一个变量，可以使用数组名给指针做赋值操作
     // test();
     //test1();
-    test3();
+    test4();
 }
