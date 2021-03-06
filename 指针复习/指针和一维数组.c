@@ -65,13 +65,18 @@ void test4()
     printf("%d\n", p-a);//a
 }
 
+//数组做函数参数 //退化为指针，所以一般会把数组的长度传递进来
+void test5(int a[]) 
+{
+    printf("%d\n", sizeof(a) /sizeof(a[0])); 
+}
 int main()
 {
-    int a[] = {1,2,3};
+    int a[] = {1,2,3,4,5};
     int b[3];
     // b = a;//error ,数组名是一个常量，常量是不能被修改的。
     int *p = b;  //但是这样是可以的，因为指针是一个变量，可以使用数组名给指针做赋值操作
     // test();
     //test1();
-    test4();
+    test5(a);
 }
