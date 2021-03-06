@@ -5,6 +5,8 @@ void test()
     int a[] = {1, 2, 3};
     printf("a:%p\n",a); 
     printf("&a:%p\n", &a[0]);//和上面的相同
+    printf("*a:%d\n", *a);  //相当于*(a+0)
+    printf("*a:%d\n", *(a+0)); //1
 }
 
 void test1()
@@ -76,7 +78,7 @@ int main()
     int b[3];
     // b = a;//error ,数组名是一个常量，常量是不能被修改的。
     int *p = b;  //但是这样是可以的，因为指针是一个变量，可以使用数组名给指针做赋值操作
-    // test();
+    test();
     //test1();
-    test5(a);
+    // test5(a);
 }
