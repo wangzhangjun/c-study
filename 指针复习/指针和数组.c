@@ -46,6 +46,17 @@ void test2()
     printf("p1:%p\n", p2 + 1); //比上面的大了2
 }
 
+void test3()
+{
+    //&数组名 + 1， 加一个数组的大小（3 * sizeof(int)）
+    int a[] = {1, 2, 3};
+    
+    printf("a:%p\n", a);
+    printf("&a[0]:%p\n", &a[0]);
+    printf("&a:%p\n", &a);      //前3个都相同
+    printf("&a+1:%p\n", &a+1);  //比前面多了12，一个数组的大小
+}
+
 int main()
 {
     int a[] = {1,2,3};
@@ -54,5 +65,5 @@ int main()
     int *p = b;  //但是这样是可以的，因为指针是一个变量，可以使用数组名给指针做赋值操作
     // test();
     //test1();
-    test2();
+    test3();
 }
