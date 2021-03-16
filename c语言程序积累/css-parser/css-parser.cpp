@@ -55,7 +55,7 @@ void apply_rule(KatanaArray *Properties)
             }
             case KATANA_VALUE_PX:
             {
-                printf("KATANA_VALUE_PX properties value is : %dpx\n", value->string);
+                printf("KATANA_VALUE_PX properties value is : %fpx\n", value->fValue);
                 break;
             }
             }
