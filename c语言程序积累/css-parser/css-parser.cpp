@@ -8,6 +8,7 @@ g++ css-parser.cpp `pkg-config --cflags --libs katana`
 ./a.out test.css
 
 eg : test.css:
+
     hr {color: sienna;}
     p {margin-left: 20px;color:red;}
     body {background-image: url("images/back40.gif");}
@@ -23,6 +24,8 @@ eg : test.css:
     ftime(&t2);             \
     printf("<" #begin "> costs %dms.\n", (t2.millitm - t1.millitm));
 
+int i = 0;
+
 void apply_rule(KatanaArray *Properties)
 {
     for (long i = 0; i < Properties->length; i++)
@@ -37,12 +40,22 @@ void apply_rule(KatanaArray *Properties)
             {
             case KATANA_VALUE_URI:
             {
-                printf("properties value is : %s\n", value->string);
+                printf("KATANA_VALUE_URI properties value is : %s\n", value->string);
                 break;
             }
             case KATANA_VALUE_IDENT:
             {
-                printf("properties value is : %s\n", value->string);
+                printf("KATANA_VALUE_IDENT properties value is : %s\n", value->string);
+                break;
+            }
+            case KATANA_VALUE_STRING:
+            {
+                printf("KATANA_VALUE_STRING properties value is : %s\n", value->string);
+                break;
+            }
+            case KATANA_VALUE_PX:
+            {
+                printf("KATANA_VALUE_PX properties value is : %dpx\n", value->string);
                 break;
             }
             }
