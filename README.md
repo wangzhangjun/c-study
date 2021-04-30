@@ -14,3 +14,5 @@ enum test : unit8_t {
     test1 = 0x01
 };
 ```
+
+3. c++继承和单例。
